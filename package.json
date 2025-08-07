@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "carve": "bash scripts/carve.sh",
     "check": "biome check --write .",
     "check:write": "biome check --write --unsafe",
     "prepare": "husky",

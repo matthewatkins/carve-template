@@ -50,9 +50,10 @@ This project uses a microservices architecture with three main services:
 
 ## Quick Start
 
-### 1. Initialize Project (Optional)
+### Option 1 - Automatic Setup
+#### 1. Initialize Project
 
-If you're using this as a template, you can rename it to your project:
+If you're using this as a template, you can initialize your project using the carve script. This will handle everything for you.
 
 ```bash
 # Interactive project initialization
@@ -67,12 +68,13 @@ This will:
 - Offer docker and DB setup
 - Provide clear next steps
 
-### 2. Install Dependencies
+### Option 2 - Manual Setup
+#### 1. Install Dependencies
 ```bash
 bun install
 ```
 
-### 3. Set Up Database with Docker
+### 2. Set Up Database with Docker
 
 #### Start PostgreSQL
 ```bash
@@ -112,7 +114,7 @@ bun run db:push:auth
 bun run db:push:api
 ```
 
-### 4. Start All Services
+### 3. Start All Services
 
 #### Option A: Using turbo
 ```bash
