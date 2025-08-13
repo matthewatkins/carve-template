@@ -202,7 +202,7 @@ initialize_project() {
         "packages/shared-utils/package.json"
         "docker-compose.yml"
         "README.md"
-        "scripts/predev.sh"
+        "scripts/dev.sh"
     )
 
     # Update package.json files
@@ -266,8 +266,8 @@ initialize_project() {
 
     # Update scripts
     print_status "Updating scripts..."
-    if [[ -f "scripts/predev.sh" ]]; then
-        replace_in_file "scripts/predev.sh" "@$old_name/" "@$new_name/"
+    if [[ -f "scripts/dev.sh" ]]; then
+        replace_in_file "scripts/dev.sh" "@$old_name/" "@$new_name/"
     fi
 
     # Remove lock files
