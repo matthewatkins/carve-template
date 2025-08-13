@@ -10,7 +10,7 @@
     "check": "biome check --write .",
     "check:write": "biome check --write --unsafe",
     "prepare": "husky",
-    "dev": "bash scripts/predev.sh && turbo dev",
+    "dev": "bash scripts/dev.sh",
     "build": "turbo build",
     "check-types": "turbo check-types",
     "clean": "bash scripts/clean.sh",
