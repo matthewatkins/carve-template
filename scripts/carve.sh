@@ -268,6 +268,9 @@ initialize_project() {
     print_status "Updating scripts..."
     if [[ -f "scripts/dev.sh" ]]; then
         replace_in_file "scripts/dev.sh" "@$old_name/" "@$new_name/"
+        # Also replace specific package references that might be hardcoded
+        replace_in_file "scripts/dev.sh" "@$old_name/shared-types" "@$new_name/shared-types"
+        replace_in_file "scripts/dev.sh" "@$old_name/shared-utils" "@$new_name/shared-utils"
     fi
 
     # Remove lock files
